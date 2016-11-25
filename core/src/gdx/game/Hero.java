@@ -27,13 +27,13 @@ public class Hero implements InputProcessor {
 
     public Hero() {
         Gdx.input.setInputProcessor(this);
-        TextureSheet = new Texture(Gdx.files.internal("panda.png"));
+        TextureSheet = new Texture(Gdx.files.internal("Vlad.png"));
         fX = 100;
         fY = 100;
         fSpeed = 2;
         arbKeys = new boolean[512];
         nMovementCycle = 0;
-        spriteSheetAnimator = new SpriteSheetAnimator(TextureSheet, 1, 12, 12, 1f);
+        spriteSheetAnimator = new SpriteSheetAnimator(TextureSheet, 8, 8, 8, 1f);
         arAnimatioin = spriteSheetAnimator.animate();
         nTimer = 0;
     }
